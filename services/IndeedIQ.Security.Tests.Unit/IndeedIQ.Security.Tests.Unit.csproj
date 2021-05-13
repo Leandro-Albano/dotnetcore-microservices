@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="TestResults\**" />
+    <EmbeddedResource Remove="TestResults\**" />
+    <None Remove="TestResults\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.4" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="coverlet.collector" Version="3.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IndeedIQ.Common.Domain.Contracts\IndeedIQ.Common.Domain.Contracts.csproj" />
+    <ProjectReference Include="..\IndeedIQ.Security.Domain.Entities\IndeedIQ.Security.Domain.Entities.csproj" />
+    <ProjectReference Include="..\IndeedIQ.Security.Domain.Events\IndeedIQ.Security.Domain.Events.csproj" />
+    <ProjectReference Include="..\IndeedIQ.Security.Tests.Common\IndeedIQ.Security.Tests.Common.csproj" />
+  </ItemGroup>
+
+</Project>

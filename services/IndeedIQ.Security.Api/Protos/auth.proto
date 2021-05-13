@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+option csharp_namespace = "IndeedIQ.Security.Api";
+
+package auth;
+
+service Auth {
+  rpc IsAuthorised (AuthorisationRequest) returns (AuthorisationReply);
+  rpc Authenticate (AuthenticationRequest) returns (AuthenticationReply);
+}
+
+message AuthorisationRequest {
+  string identityServerId = 1;
+  string resourceName = 11;
+  string actionName = 21;
+  repeated int64 accounts = 31;
+  repeated int64 organisations = 41;
+}
+
+message AuthorisationReply {
+  bool isAuthorised = 1;
+  repeated int64 accounts = 11;
+  repeated int64 organisations = 21;
+}
+
+message AuthenticationRequest {
+}
+
+message AuthenticationReply {
+  string identityServerId = 1;
+  string name = 11;
+  string email = 21;
+  string currency = 31;
+  string country = 41;
+  repeated AuthenticationReplyUserRole roles = 51;
+  string login = 61;
+}
+
+message AuthenticationReplyUserRole {
+  string roleName = 1;
+  repeated int64 accounts = 21;
+  repeated int64 organisations = 31;
+  repeated string authorisedActions = 41;
+}

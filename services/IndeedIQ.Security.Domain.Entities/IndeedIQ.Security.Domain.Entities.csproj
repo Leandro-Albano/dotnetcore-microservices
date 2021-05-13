@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IndeedIQ.Common.Domain.Entities.FluentValidationExtensions\IndeedIQ.Common.Domain.Entities.FluentValidationExtensions.csproj" />
+    <ProjectReference Include="..\IndeedIQ.Common.Domain.Entities\IndeedIQ.Common.Domain.Entities.csproj" />
+    <ProjectReference Include="..\IndeedIQ.Security.Domain.Contracts\IndeedIQ.Security.Domain.Contracts.csproj" />
+    <ProjectReference Include="..\IndeedIQ.Security.Domain.Events\IndeedIQ.Security.Domain.Events.csproj" />
+  </ItemGroup>
+
+</Project>
