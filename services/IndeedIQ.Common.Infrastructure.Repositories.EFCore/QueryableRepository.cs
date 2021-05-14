@@ -10,7 +10,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace IndeedIQ.Common.Infrastructure.Repositories
+namespace IndeedIQ.Common.Infrastructure.Repositories.EFCore
 {
     public class QueryableRepository<T> : IQueryableRepository<T> where T : class, IAggregateRoot
     {

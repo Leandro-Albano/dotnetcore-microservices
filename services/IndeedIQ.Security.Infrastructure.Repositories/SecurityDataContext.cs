@@ -1,6 +1,6 @@
 ﻿using IndeedIQ.Common.Domain.Entities;
 using IndeedIQ.Common.Infrastructure.Messaging.Mediator;
-using IndeedIQ.Common.Infrastructure.Repositories;
+using IndeedIQ.Common.Infrastructure.Repositories.EFCore;
 using IndeedIQ.Security.Domain.Entities;
 using IndeedIQ.Security.Domain.Entities.ResourceAggregate;
 using IndeedIQ.Security.Domain.Entities.RoleAggregate;

@@ -5,6 +5,7 @@ using IndeedIQ.Common.Infrastructure.Messaging.Mediator;
 using IndeedIQ.Common.Infrastructure.Messaging.PubSub;
 using IndeedIQ.Common.Infrastructure.Messaging.PubSub.InMemory;
 using IndeedIQ.Common.Infrastructure.Repositories;
+using IndeedIQ.Common.Infrastructure.Repositories.EFCore;
 using IndeedIQ.Common.Util.AutoMapper;
 using IndeedIQ.Security.Api.Extensions;
 using IndeedIQ.Security.Api.GrpcServices;

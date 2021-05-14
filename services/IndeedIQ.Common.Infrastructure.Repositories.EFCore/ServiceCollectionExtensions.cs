@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 using System;
 
-namespace IndeedIQ.Common.Infrastructure.Repositories
+namespace IndeedIQ.Common.Infrastructure.Repositories.EFCore
 {
     public static class ServiceCollectionExtensions
     {

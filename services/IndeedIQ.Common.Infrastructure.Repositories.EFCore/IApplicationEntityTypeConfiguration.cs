@@ -1,6 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿
+using Microsoft.EntityFrameworkCore;
 
-namespace IndeedIQ.Common.Infrastructure.Repositories
+namespace IndeedIQ.Common.Infrastructure.Repositories.EFCore
 {
     public interface IApplicationEntityTypeConfiguration
     {

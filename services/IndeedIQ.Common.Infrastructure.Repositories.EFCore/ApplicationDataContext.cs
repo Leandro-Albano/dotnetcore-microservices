@@ -8,9 +8,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace IndeedIQ.Common.Infrastructure.Repositories
+namespace IndeedIQ.Common.Infrastructure.Repositories.EFCore
 {
-    public class ApplicationDataContext : DbContext, IDomainDataContext
+    public abstract class ApplicationDataContext : DbContext, IDomainDataContext
     {
         private readonly IMediator mediator;
 

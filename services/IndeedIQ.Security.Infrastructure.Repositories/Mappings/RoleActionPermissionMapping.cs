@@ -1,4 +1,5 @@
 ﻿using IndeedIQ.Common.Infrastructure.Repositories;
+using IndeedIQ.Common.Infrastructure.Repositories.EFCore;
 using IndeedIQ.Security.Domain.Entities.RoleAggregate;
 
 using Microsoft.EntityFrameworkCore;

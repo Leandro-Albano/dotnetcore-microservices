@@ -7,7 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 
-namespace IndeedIQ.Common.Infrastructure.Repositories
+namespace IndeedIQ.Common.Infrastructure.Repositories.EFCore
 {
     public class IncludableQueryableRepository<T, TProperty> : QueryableRepository<T>, IIncludableQueryableRepository<T, TProperty>
         where T : class, IAggregateRoot

@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 using System.Threading.Tasks;
 
-namespace IndeedIQ.Common.Infrastructure.Repositories
+namespace IndeedIQ.Common.Infrastructure.Repositories.EFCore
 {
     public class Repository<T> : QueryableRepository<T>, IRepository<T> where T : class, IAggregateRoot
     {
@@ -34,9 +34,7 @@ namespace IndeedIQ.Common.Infrastructure.Repositories
         public void Delete(T entity)
         {
             if (entity is IArchivableEntity archivable)
-            {
                 archivable.Archive();
-            }
             else if (entity is IDeletableEntity deletable)
             {
                 deletable.Delete();
