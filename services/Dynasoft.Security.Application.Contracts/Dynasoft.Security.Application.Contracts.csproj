@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Dynasoft.Common.Infrastructure.Messaging\Dynasoft.Common.Infrastructure.Messaging.csproj" />
+    <ProjectReference Include="..\Dynasoft.Security.Domain.Entities\Dynasoft.Security.Domain.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

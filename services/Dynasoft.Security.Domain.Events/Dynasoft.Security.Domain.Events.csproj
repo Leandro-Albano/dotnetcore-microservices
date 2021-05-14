@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Dynasoft.Common.Domain.Contracts\Dynasoft.Common.Domain.Contracts.csproj" />
+    <ProjectReference Include="..\Dynasoft.Security.Domain.Contracts\Dynasoft.Security.Domain.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

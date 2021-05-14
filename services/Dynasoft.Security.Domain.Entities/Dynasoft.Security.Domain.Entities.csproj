@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Dynasoft.Common.Domain.Entities.FluentValidationExtensions\Dynasoft.Common.Domain.Entities.FluentValidationExtensions.csproj" />
+    <ProjectReference Include="..\Dynasoft.Common.Domain.Entities\Dynasoft.Common.Domain.Entities.csproj" />
+    <ProjectReference Include="..\Dynasoft.Security.Domain.Contracts\Dynasoft.Security.Domain.Contracts.csproj" />
+    <ProjectReference Include="..\Dynasoft.Security.Domain.Events\Dynasoft.Security.Domain.Events.csproj" />
+  </ItemGroup>
+
+</Project>

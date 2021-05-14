@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="Grpc.AspNetCore" Version="2.32.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.0-rc.1.20451.13">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="NSwag.AspNetCore" Version="13.7.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Dynasoft.Common.Api\Dynasoft.Common.Api.csproj" />
+    <ProjectReference Include="..\Dynasoft.Common.Infrastructure.Cache\Dynasoft.Common.Infrastructure.Cache.csproj" />
+    <ProjectReference Include="..\Dynasoft.Common.Infrastructure.Messaging\Dynasoft.Common.Infrastructure.Messaging.csproj" />
+    <ProjectReference Include="..\Dynasoft.Common.Util.AutoMapper\Dynasoft.Common.Util.AutoMapper.csproj" />
+    <ProjectReference Include="..\Dynasoft.Security.Application.Contracts\Dynasoft.Security.Application.Contracts.csproj" />
+    <ProjectReference Include="..\Dynasoft.Security.Infrastructure.Repositories\Dynasoft.Security.Infrastructure.Repositories.csproj" />
+    <ProjectReference Include="..\Dynasoft.Security.Tests.Common\Dynasoft.Security.Tests.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="Protos\auth.proto" GrpcServices="Server" />
+  </ItemGroup>
+
+</Project>
